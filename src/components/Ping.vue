@@ -1,6 +1,6 @@
-<template lang="html">
-  <div>
-    <p>{{ msg }}</p>
+<template>
+  <div class="container">
+    <button class="btn btn-primary" type="button"> {{ msg }}</button>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
   name: 'Ping',
   data () {
     return {
-      msg: 'Hello, this is Ping.vue component'
+      msg: ''
     }
   },
   methods: {
@@ -35,3 +35,5 @@ export default {
 <style lang="css" scoped>
 
 </style>
+
+
