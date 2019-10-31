@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-    <button class="btn btn-primary" type="button"> {{ msg }}</button>
+    <button class="btn btn-primary" type="button" @click="getMessage">
+      {{ msg }}
+    </button>
   </div>
 </template>
 
@@ -11,7 +13,7 @@ export default {
   name: 'Ping',
   data () {
     return {
-      msg: ''
+      msg: '前后端通信测试'
     }
   },
   methods: {
@@ -25,9 +27,6 @@ export default {
           console.error(error)
         })
     }
-  },
-  created () {
-    this.getMessage()
   }
 }
 </script>
@@ -35,5 +34,3 @@ export default {
 <style lang="css" scoped>
 
 </style>
-
-
